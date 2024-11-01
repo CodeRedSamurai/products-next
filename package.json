@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "npm run prepare && next build"
+    "prepare":""
   },
   "dependencies": {
     "mongodb": "^6.10.0",
