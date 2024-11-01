@@ -13,7 +13,7 @@ export default function Home() {
   const [cartItems, setCartItems] = useState([]);
 
   async function getsnacksList() {
-    await fetch("/api/dashboard", {
+    await fetch("api/dashboard", {
       method: "GET",
       headers: {
         Accept: "application/json",
