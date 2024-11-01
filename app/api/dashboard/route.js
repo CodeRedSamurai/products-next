@@ -4,7 +4,7 @@ import Product from "../../../lib/models/product";
 
 export const GET = async (request) => {
   try {
-    await connect();
+    //await connect();
     //const products = await Product.find();
     return new NextResponse(
       JSON.stringify([
