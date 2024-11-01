@@ -5,8 +5,8 @@ import Product from "../../../lib/models/product";
 export const GET = async () => {
   try {
     await connect();
-    const products = await Product.find();
-    return new NextResponse(JSON.stringify(products), { status: 200 });
+    //const products = await Product.find();
+    return new NextResponse(JSON.stringify([{"_id":"6723b0f2d7bd28a154cc0f4e","name":"Mahabharata","author":"Vyas","price":100,"part":1,"Genre":"Mythology","__v":0},{"_id":"6723b1e3d7bd28a154cc0f55","name":"Ramayan","author":"Valmiki","price":100,"part":1,"Genre":"Mythology","__v":0},{"_id":"6723b615d7bd28a154cc0f5d","name":"Casablanca","author":"Tim west","price":100,"part":2,"Genre":"Western","__v":0}]), { status: 200 });
   } catch (error) {
     return new NextResponse(error, { status: 500 });
   }
